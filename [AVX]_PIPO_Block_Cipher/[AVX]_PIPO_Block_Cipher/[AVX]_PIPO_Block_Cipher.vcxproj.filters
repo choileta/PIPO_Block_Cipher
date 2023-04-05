@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="AVX2">
+      <UniqueIdentifier>{a6f10c4c-8594-411e-b184-d45d384bf8d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AVX512">
+      <UniqueIdentifier>{4ab6538c-62d7-4703-a6a6-24cafa99086c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AVX_2_PIPO.c">
+      <Filter>AVX2</Filter>
+    </ClCompile>
+    <ClCompile Include="AVX512_PIPO.c">
+      <Filter>AVX512</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="type.h">
+      <Filter>AVX2</Filter>
+    </ClInclude>
+    <ClInclude Include="AVX512_type.h">
+      <Filter>AVX512</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
